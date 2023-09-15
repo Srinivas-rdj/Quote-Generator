@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,500&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1534693765128-b9fbf67031ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;    
+    font-family: 'Ibarra Real Nova', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    width: auto;
+    /* border: 1px solid black; */
+    padding: 30px 40px;
+    border-radius: 10px;
+    /* background-color: rgba(0,0,0,0.2); */
+    max-width: 960px;
+    /* box-shadow: -22px 100px 47px 0px rgba(0,0,0,0.1);
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(255, 255, 255, 0.68);
+}
+
+.text {
+    font-size: 2.75rem;
+
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.author{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-family: italic;
+    font-weight: 300;
+}
+
+.button-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: black;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+
+}
+
+button:hover{
+    filter: brightness(110%);
+
+}
+
+button:active{
+    transform:  translate(0,0.3rem);
+    box-shadow: 0 0.1rem rgba(255,255,255,0.65);
+}
+
+.twitter{
+    color: #38a1f3;
+
+}
+
+.fa-twitter{
+    font-size: 1.5rem;
+}
+
+.long-quote{
+    font-size: 2rem;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #333; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
